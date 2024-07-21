@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: my-simple-app-service
 spec:
+  type: NodePort  # Ensure this is set to NodePort
   selector:
     app: my-simple-app
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 32000
+      port: 80        # Port the service will expose
+      targetPort: 80  # Port the container is listening on
+      nodePort: 32000 # NodePort (within the range 30000-32767)
