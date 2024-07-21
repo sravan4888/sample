@@ -17,3 +17,5 @@ spec:
         image: ghcr.io/sravan4888/sample/my-simple-app:latest
         ports:
         - containerPort: 80
+      imagePullSecrets:
+       - name: ghcr-secret  
