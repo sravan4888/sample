@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-simple-app-container
-        image: ghcr.io/sravan4888/sample/my-simple-app:latest
+        image: ghcr.io/sravan4888/sample/sample-image:latest
         ports:
         - containerPort: 80
       imagePullSecrets:
